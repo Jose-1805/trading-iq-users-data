@@ -1,0 +1,26 @@
+Los siguientes pasos se deben realizar con cada divisa
+
+1. Consultar las mejores horas de la divisa de acuerdo a una estrategia
+y actualizar las horas en el archivo EvaluateResultsTrademood.php
+
+	Ejecutar: php artisan best-hours 2020-07-20 percentage {active_id}
+	Actualizar: $hours_for_day_percentage
+
+	Ejecutar: php artisan best-hours 2020-07-20 performance {active_id}
+	Actualizar: $hours_for_day_performance
+
+	Ejecutar: php artisan best-hours 2020-07-20 best_users {active_id}
+	Actualizar: $hours_for_day_best_users
+
+	Ejecutar: php artisan best-hours 2020-07-20 best_users_copied {active_id}
+	Actualizar: $hours_for_day_best_users_copied
+
+2. Definir la mejor configuración por cada estrategia (percentage, performance, best_users, best_users_copied)
+Para esto se debe evaluar los resultados obtenidos alternando los parametros
+enviados con el siguiente comando:
+
+	php artisan trademood:evaluate --start=2020-07-20 1 --act=1 --print-data=yess --separate-each-day=yes --apply-hours=yes --only-day=? --from=? --use-general-settings --full-percentages=yes --min-operations-best-users= ESTE ULTIMO SÓLO EN from_best_users
+
+Esto se hace con el número del día que se desea consultar o con el que se va a trabajar
+Una vez identificada la configuración adecuada para una estrategia se deben establecer
+los valores de configuración en el archivo de configuración de la divisa active_?_settings.js

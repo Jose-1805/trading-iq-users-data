@@ -1,0 +1,78 @@
+{
+	"copy_from_ranking_percentage":false,
+	"copy_from_ranking_performance":false,
+	"copy_from_best_users":true,
+	"copy_from_best_users_copied":false,
+		
+	"min_operations_best_users":25,
+				
+	"copy_only_good_seconds":{
+		"percentage":false,
+		"performance":false,
+		"best_users":false,
+		"best_users_copied":false
+	},
+						
+	"copy_trademood_full_percentages":{
+		"percentage":false,
+		"performance":false,
+		"best_users":false,
+		"best_users_copied":false
+	},
+
+	"copy_trademood_confirmation_operations":{
+		"percentage":false,
+		"performance":false,
+		"best_users":false,
+		"best_users_copied":false
+	},
+		
+	"apply_hours":{
+		"percentage":true,
+		"performance":true,
+		"best_users":false,
+		"best_users_copied":true
+	},
+
+	"hours": {
+	},
+		
+	"use_general_settings":{
+		"percentage":false,
+		"performance":false,
+		"best_users":false,
+		"best_users_copied":false
+	},
+
+	"trademood_settings":{	        
+        "min_operations":0,
+        "min_percentage_operations":0,
+        "min_percentage_amount":0,
+        "min_operations_pending":0,
+        "min_percentage_operations_pending":0,
+        "min_percentage_amount_pending":0,
+        "max_operations":1000,
+        "min_commission_broker":1,
+        "max_commission_broker":30
+    },
+
+    "trademood_settings_general":{	        
+        "min_operations":0,
+        "min_percentage_operations":0,
+        "min_percentage_amount":0,
+        "min_operations_pending":0,
+        "min_percentage_operations_pending":0,
+        "min_percentage_amount_pending":0,
+        "max_operations":1000,
+        "min_commission_broker":1,
+        "max_commission_broker":30
+    },
+		
+	"copy_for_trademood":true,
+	"copy_for_strategy":false,
+	"copy_for_selection":false,
+		
+	"strategy_copy_in_trsoft":false,
+	"trademood_copy_in_trsoft":true,
+	"selection_copy_in_trsoft":false
+}
